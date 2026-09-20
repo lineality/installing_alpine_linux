@@ -70,11 +70,11 @@ enter -> crypt
 ->  # apk add doas tmux git nano
 
 38. Setting up doas: you may need to use cd and ls to navigate to find files.
-Make or modify file, enter text -> 
+As root, make or modify file:
 ```ash
 hx /etc/doas.d/doas.conf
 ```
-If the file and line does not exist yet, type in: "permit persist :wheel" and add new line at the end (no trailing spaces)
+If the file and line does not exist yet, type in: "permit persist :wheel" and add a new line at the end (no trailing spaces)
 
 
 34. add community package repositories
