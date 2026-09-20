@@ -14,6 +14,7 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 - Alpine can be set up to encrypt the drive
 - Alpine can be set up as headless, window-manager (i3, sway), or normal linux GUI (xcfe4)
 - Modifying network setup can be tricky
+- Monitor brightness is now easier with apk's brightnessctl
 
 #### Ram Size
 - Ram use for headless may be around 200mb
@@ -127,6 +128,20 @@ udhcpc -i eth0
 2. go to settings -> appearance, adw-gtk3-dark should appear, double click on it
 ```ash
 apk add adw-gtk3 adwaita-xfce-icon-theme
+```
+
+### Set Monitor Brightness
+- Install brightnessctl
+```ash
+apk add brightnessctl
+```
+- e.g. set **to** a specific level
+```ash
+brightnessctl set 40%
+```
+- e.g. reduce **by** a specific level
+```ash
+brightnessctl set 10%-
 ```
 
 ### Web Browsers
