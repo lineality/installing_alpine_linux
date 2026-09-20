@@ -74,8 +74,8 @@ As root, make or modify file:
 ```ash
 hx /etc/doas.d/doas.conf
 ```
-If the file and line does not exist yet, type in: "permit persist :wheel" and add a new line at the end (no trailing spaces)
-
+- If the file and line does not exist yet, type in: "permit persist :wheel" and add a new line at the end (no trailing spaces)
+- 'doas' works like 'sudo', e.g. sign in as user, e.g. "tom" then when using doas enter tom's password again.
 
 34. add community package repositories
 modify file -> # vi /etc/apk/repositories
