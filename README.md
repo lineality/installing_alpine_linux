@@ -157,11 +157,7 @@ apk add --update python3
 apk add --update py3-pip
 ```
 
-### C (language)
-- https://wiki.alpinelinux.org/wiki/GCC
-```ash
-apk add build-base
-```
+
 
 ### Rust (language)
 rustup standard install (using curl, ug) works: https://rustup.rs/
@@ -192,7 +188,13 @@ cd Odin
 ln -s "$PWD/odin" /usr/local/bin/odin
 odin version
 
-LLVM
+### C (language)
+- https://wiki.alpinelinux.org/wiki/GCC
+```ash
+apk add build-base
+```
+
+#### LLVM
 https://www.ranvir.tech/llvm-clang-on-alpine-linux/  
 ```ash
 apk add clang lld musl-dev compiler-rt compiler-rt-static
