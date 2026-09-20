@@ -101,10 +101,11 @@ To install Rust via https://rustup.rs/:
 -> # apk add htop 
 -> # apk add top 
 
-?-> # apk add elogind polkit-elogind
-https://wiki.alpinelinux.org/wiki/Elogind 
 
-39. -> startx
+40 
+```ash
+startx
+```
 https://wiki.alpinelinux.org/wiki/Xfce#Startup
 
 
@@ -131,6 +132,17 @@ Others:
 apk add build-base
 ```
 
+### Rust (language)
+rustup standard install (using curl, ug) works: https://rustup.rs/
+```ash
+apk add curl
+```
+Probably this but **double check https://rustup.rs/**
+```ash
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
+```
+- log out and log back in, you should not need to manually set path
+
 
 
 ### Zig (language)
@@ -138,18 +150,6 @@ zig is already in apk
 ```ash
 apk add zig
 ```
-
-### Rust (language)
-rustup standard install (using curl, ug) works: https://rustup.rs/
-```ash
-apk add curl
-```
-
-Probably this but **double check https://rustup.rs/**
-```ash
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-```
-- log out and log back in, you should not need to manually set path
 
 
 
@@ -182,11 +182,9 @@ dbus-run-session sway
 - https://wiki.alpinelinux.org/wiki/Sway#Starting_Sway
 - https://www.youtube.com/watch?v=1X9dyK4LOlE 
 
+
 ### Links
-
-Great Step by Step video
-https://www.youtube.com/watch?v=8WYgynP8VJ8 
-or
-~ https://tilde.town/~kzimmermann/articles/alpine_linux_desktop.html 
-
+- Good Step by Step video: https://www.youtube.com/watch?v=8WYgynP8VJ8 
+- https://tilde.town/~kzimmermann/articles/alpine_linux_desktop.html 
+- https://wiki.alpinelinux.org/wiki/Elogind 
 
