@@ -101,30 +101,40 @@ To install Rust via https://rustup.rs/:
 -> # apk add htop 
 -> # apk add top 
 
-
-40 
+#### To Start Xfce4 (GUI desktop)
 ```ash
 startx
 ```
-https://wiki.alpinelinux.org/wiki/Xfce#Startup
+- https://wiki.alpinelinux.org/wiki/Xfce#Startup
+
+# Tips on Network Step:
+- If you have a standard wifi, setting that up during initial setup is probably the simplest.
+1. Switching to lan (not wifi)
+- See what is available and if it is "up" (connected) or "down" (not connected)
+```ash
+ip a
+```
+- Manually enable lan, e.g.
+```ash
+ifconfig eth- up
+```
+- Assign Temporary IP Address 
+```ash
+udhcpc -i eth0
+```
 
 
-
-Others:
-? # apk add neofetch
-# apk add git
-# apk add automake
-# apk add rust cargo
-
-
-### Web Browser
-# apk add firefox
-# apk add lynx
+### Web Browsers
+```ash
+apk add firefox
+apk add lynx
+```
 
 ### python3
-# apk add --update python3
-# apk add --update py3-pip
-
+```ash
+apk add --update python3
+apk add --update py3-pip
+```
 
 ### C (language)
 - https://wiki.alpinelinux.org/wiki/GCC
@@ -167,9 +177,13 @@ https://www.ranvir.tech/llvm-clang-on-alpine-linux/
 apk add clang lld musl-dev compiler-rt compiler-rt-static
 ```
 
-compile example:
-# clang -fuse-ld=lld --rtlib=compiler-rt hello.c
-
+#### Other packages:
+```ash
+apk add git
+apk add automake
+apk add rust cargo
+? # apk add neofetch
+```
 
 ### Window Managers:
 - Sway
