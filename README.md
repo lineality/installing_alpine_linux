@@ -4,9 +4,8 @@
 - https://alpinelinux.org/
 
 
-#### Overview
+## Overview
 This is a guide for installing Alpine linux on a desktop, laptop.
-
 Alpine linux is a very well maintained minimal/small linux distro widely relied on as a default for containers (such as podman or docker).
 
 - Package manager is apk
@@ -14,13 +13,14 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 - musl libc (a lightweight C standard library) is used instead of GNU C Library (glibc) (https://musl.libc.org/)
 - Alpine can be set up to encrypt the drive
 - Alpine can be set up as headless, window-manager (i3, sway), or normal linux GUI (xcfe4)
-- Ram use is 
+- Modifying network setup can be tricky
+
+#### Ram Size
+- Ram use for headless may be around 200mb
+- Ram use for XFCE4 may be around 700mb
 
 
-
-
-
-Steps:
+# Steps to Install Alpine Linux as Laptop/Desktop OS:
 1. download iso
 2. 'burn' to usb
 3. boot iso usb
