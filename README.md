@@ -116,7 +116,7 @@ ip a
 ```
 - Manually enable lan, e.g.
 ```ash
-ifconfig eth- up
+ifconfig eth0 up
 ```
 - Assign Temporary IP Address 
 ```ash
