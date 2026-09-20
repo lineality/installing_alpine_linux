@@ -107,7 +107,7 @@ startx
 ```
 - https://wiki.alpinelinux.org/wiki/Xfce#Startup
 
-# Tips on Network Step:
+### Tips on Network Step:
 - If you have a standard wifi, setting that up during initial setup is probably the simplest.
 1. Switching to lan (not wifi)
 - See what is available and if it is "up" (connected) or "down" (not connected)
@@ -215,7 +215,7 @@ dbus-run-session sway
 ```
 - https://wiki.alpinelinux.org/wiki/Sway#Starting_Sway
 - https://www.youtube.com/watch?v=1X9dyK4LOlE 
-
+- https://burunducko.github.io/Sway-keys/
 
 ### Links
 - Good Step by Step video: https://www.youtube.com/watch?v=8WYgynP8VJ8 
