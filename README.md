@@ -137,7 +137,7 @@ apk add brightnessctl
 ```
 - e.g. set **to** a specific level
 ```ash
-brightnessctl set 40%
+brightnessctl set 15%
 ```
 - e.g. reduce **by** a specific level
 ```ash
