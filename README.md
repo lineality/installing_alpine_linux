@@ -122,6 +122,12 @@ ifconfig eth- up
 udhcpc -i eth0
 ```
 
+### XFCE dark-mode
+1. install dark theme items
+2. go to settings -> appearance, adw-gtk3-dark should appear, double click on it
+```ash
+apk add adw-gtk3 adwaita-xfce-icon-theme
+```
 
 ### Web Browsers
 ```ash
