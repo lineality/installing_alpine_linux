@@ -15,6 +15,7 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 - Alpine can be set up as headless, window-manager (i3, sway), or normal linux GUI (xcfe4)
 - Modifying network setup can be tricky
 - Monitor brightness is now easier with apk's brightnessctl
+- alpine/ash command to shutdown is 'poweroff'
 
 #### Ram Size
 - Ram use for headless may be around 200mb
