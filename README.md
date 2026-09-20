@@ -72,14 +72,14 @@ enter -> crypt
 38. likely nothing to do in this step:
 you may need to use cd and ls to navigate to find files
 (this is different from video)
-modify file, enter text -> # nano /etc/doas.d/doas.conf
+modify file, enter text -> # vi /etc/doas.d/doas.conf
 type in: "permit persist :wheel"
 save: ctrl s
 exit: ctrl x
 (note: file may already contain "permit persist :wheel")
 
 34. add community package repositories
-modify file -> # nano /etc/apk/repositories
+modify file -> # vi /etc/apk/repositories
 
 35. remove the "#" from the community line (likely line 2)
 save: ctrl s
