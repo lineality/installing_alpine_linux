@@ -69,14 +69,13 @@ enter -> crypt
 37. doas is lighter than sudo (recommended, standard on BSD) 
 ->  # apk add doas tmux git nano
 
-38. likely nothing to do in this step:
-you may need to use cd and ls to navigate to find files
-(this is different from video)
-modify file, enter text -> # vi /etc/doas.d/doas.conf
-type in: "permit persist :wheel"
-save: ctrl s
-exit: ctrl x
-(note: file may already contain "permit persist :wheel")
+38. Setting up doas: you may need to use cd and ls to navigate to find files.
+Make or modify file, enter text -> 
+```ash
+hx /etc/doas.d/doas.conf
+```
+If the file and line does not exist yet, type in: "permit persist :wheel" and add new line at the end (no trailing spaces)
+
 
 34. add community package repositories
 modify file -> # vi /etc/apk/repositories
