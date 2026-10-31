@@ -44,7 +44,7 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 17. re-enter root password
 18. timzone, pick whatever enter "?" to see options
 19. proxy, default none, hit enter
-20. Network Tim Protocol, use default Busybox, hit enter
+20. NTP: Network Tim Protocol, select default [busybox], hit enter
 21. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
 
 22. option to add user (you can do this later)
