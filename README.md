@@ -55,7 +55,8 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 sys: traditional
 data: dual-boot (preserve existing "data")
 crypt: encrypted (recommended)
-enter -> crypt
+
+Recommended -> crypt
 ```
 26: Next (after 'crypt'): "How would you like to use it?" enter -> sys
 27: erase drive -> y
