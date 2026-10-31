@@ -58,8 +58,8 @@ crypt: encrypted (recommended)
 
 Recommended -> crypt
 ```
-26: Next (after 'crypt'): "How would you like to use it?" enter -> sys
-27: erase drive -> y
+26. Next (after 'crypt'): "How would you like to use it?" enter -> sys
+27. erase drive -> y
 28. encryption password, enter your choice
 29. re-enter your encryption password (lock)
 30. "unlock" re-re-re-enter your encryption password a third (and final) time
