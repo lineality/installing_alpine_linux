@@ -19,7 +19,7 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 - Alpine/ash command to shutdown is 'poweroff'
 
 #### Ram Size
-- Ram use for headless may be around 200mb
+- Ram use for headless may be around 150-200mb
 - Ram use for XFCE4 may be around 700mb
 
 
