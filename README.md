@@ -64,7 +64,7 @@ enter -> crypt
 30. "unlock" re-re-re-enter your encryption password a third (and final) time
 
 #### main install happens here
-31. enter -> reboot
+31. When prompted to reboot, enter -> reboot
 32. login, enter -> root
 33. enter your password
 34. check memory being used, enter -> # free -h
