@@ -24,32 +24,32 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 
 
 # Steps to Install Alpine Linux as Laptop/Desktop OS:
-1. download iso
-2. 'burn' to usb
-3. boot iso usb
+1. Download iso, https://alpinelinux.org/downloads/ (e.g. x86x64)
+2. 'burn' to usb (e.g. using Fedora Media Writer, or dd)
+3. boot iso usb (look up bios-boot for that device, e.g. F2 or F8 etc). booting from this image on USB starts a (headless) runs-from-usb mode similar to the install-usb-image for any linux distro. You run that on-USB then you use that to install to disk (or to use or test the OS from USB).
 4. login: enter -> root
 5. enter -> setup-alpine
-6. keyboard, enter -> us
+6.1 keyboard, enter -> us
 6.2 again: enter -> us
-7. hostname, name of machine, type in your choice
-8. "which one do you want to initialize" select [wlan0] wifi, type in wifi name
-9. password/key, type in password
-10. "Ip address for wlan0" 1, use default dhcp, hit enter
-11. "Ip address for wlan0" 2, use default dhcp, hit enter
-12. "Gateway? (or None)" default None, hit enter
-13. manual network config, default no, hit enter
+8. hostname, name of machine, type in your choice
+9. "which one do you want to initialize" select [wlan0] wifi, type in wifi name
+10. password/key, type in password
+11. "Ip address for wlan0" 1, use default dhcp, hit enter
+12. "Ip address for wlan0" 2, use default dhcp, hit enter
+13. "Gateway? (or None)" default None, hit enter
+14. manual network config, default no, hit enter
 
-14. change root password, enter new password 
-15. re-enter root password
-16. timzone, pick whatever enter "?" to see options
-17. proxy, default none, hit enter
-18. Network Tim Protocol, use default Busybox, hit enter
-19. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
+15. change root password, enter new password 
+16. re-enter root password
+17. timzone, pick whatever enter "?" to see options
+18. proxy, default none, hit enter
+19. Network Tim Protocol, use default Busybox, hit enter
+20. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
 
-20. option to add user (you can do this later)
-21. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
-22. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
-23. How would you like to use the disk? (type of install) 
+21. option to add user (you can do this later)
+22. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
+23. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
+24. How would you like to use the disk? (type of install) 
 sys: traditional
 data: dual-boot (preserve existing "data")
 crypt: encrypted (recommended)
