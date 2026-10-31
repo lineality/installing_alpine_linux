@@ -18,7 +18,7 @@ This is a guide for installing Alpine linux on a desktop, laptop. Alpine linux i
 - Alpine/ash command to shutdown is 'poweroff'
 
 #### Ram Size
-- Ram use for headless may be around 150-200mb
+- Ram use for headless may be around 150mb for a minimal install, and 300mb after installing (not using) GUI packages.
 - Ram use for XFCE4 may be around 700mb
 
 
