@@ -8,14 +8,15 @@
 This is a guide for installing Alpine linux on a desktop, laptop.
 Alpine linux is a very well maintained minimal/small linux distro widely relied on as a default for containers (such as podman or docker).
 
+#### Tips & Notes:
 - Package manager is apk
 - Shell is ash (slimmer than bash) by default
 - musl libc (a lightweight C standard library) is used instead of GNU C Library (glibc) (https://musl.libc.org/)
 - Alpine can be set up to encrypt the drive
 - Alpine can be set up as headless, window-manager (i3, sway), or normal linux GUI (xcfe4)
-- Modifying network setup can be tricky
+- Main network setup (including wifi) is simple, but later modifying / switching network setup can be tricky
 - Monitor brightness is now easier with apk's brightnessctl
-- alpine/ash command to shutdown is 'poweroff'
+- Alpine/ash command to shutdown is 'poweroff'
 
 #### Ram Size
 - Ram use for headless may be around 200mb
