@@ -72,36 +72,31 @@ enter -> crypt
 36. enter password
 37. re-enter password
 38. enable priviledges for user (optional) -> adduser YOURSHORTNAME wheel
-39. doas is lighter than sudo (recommended, standard on BSD) 
-->  # apk add doas tmux git nano
-
+39. doas is lighter than sudo (recommended, standard on BSD) ->  # apk add doas 
 40. Setting up doas: you may need to use cd and ls to navigate to find files.
+    
 As root, make or modify file:
 ```ash
-hx /etc/doas.d/doas.conf
+vi /etc/doas.d/doas.conf
 ```
 - If the file and line does not exist yet, type in: "permit persist :wheel" and add a new line at the end (no trailing spaces)
 - 'doas' works like 'sudo', e.g. sign in as user, e.g. "tom" then when using doas enter tom's password again.
 
-41. add community package repositories
-modify file -> # vi /etc/apk/repositories
-
-42. remove the "#" from the community line (likely line 2)
-save: ctrl s
-exit: ctrl x
-43. refresh, enter text -> # apk update
-44. -> # apk add helix gcc musl-dev
+41. add community package repositories, modify file -> # vi /etc/apk/repositories
+42. remove the "#" from the community line (likely line 2) ('i' to type, 'esc :wq' to save and exit)
+43. refresh, enter -> # apk update
+44. More configuration (system monitors: top, htop, bottom, 
+```ash
+-> # rc-update add dbus
+-> # apk add tumx git helix gcc musl-dev htop top bottom nethogs
+```
 
 [next few steps for gui (optional)]
 45. -> # setup-xorg-base
 46. -> # apk add xfce4 xfce4-terminal dbus
-[note, if you don't want to use the greeter, just type in "startx" from command line]
+[note, if you don't need 'the greeter', it is easy to type in "startx" from command line to start GUI]
 
-47. More configuration (system monitors: top, htop, bottom, 
-```ash
--> # rc-update add dbus
--> # apk add htop top bottom nethogs
-```
+
 
 #### To Start Xfce4 (GUI desktop)
 ```ash
