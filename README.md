@@ -32,25 +32,26 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 5. This command starts the install-Apline-on-something process, enter -> setup-alpine 
 6. keyboard, enter -> us
 7. *again*: enter -> us
-8. hostname, name of machine, type in your choice
-9. "which one do you want to initialize" select [wlan0] wifi, type in wifi name
-10. password/key, type in password
-11. "Ip address for wlan0" 1, use default dhcp, hit enter
-12. "Ip address for wlan0" 2, use default dhcp, hit enter
-13. "Gateway? (or None)" default None, hit enter
-14. manual network config, default no, hit enter
+8. Hostname: This will be the name of machine, type in your choice.
+9. "which one do you want to initialize" e.g.  select default [wlan0] for wifi
+10. e.g. Type in whole wifi name (*not* the number), e.g. 'office-wifi-5000'
+11. password/key, type in password
+12. "Ip address for wlan0" 1, select default [dhcp], hit enter
+13. "Ip address for wlan0" 2, select default [dhcp], hit enter
+14. "Gateway? (or None)" default None, hit enter
+15. manual network config, default no, hit enter
 
-15. change root password, enter new password 
-16. re-enter root password
-17. timzone, pick whatever enter "?" to see options
-18. proxy, default none, hit enter
-19. Network Tim Protocol, use default Busybox, hit enter
-20. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
+16. change root password, enter new password 
+17. re-enter root password
+18. timzone, pick whatever enter "?" to see options
+19. proxy, default none, hit enter
+20. Network Tim Protocol, use default Busybox, hit enter
+21. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
 
-21. option to add user (you can do this later)
-22. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
-23. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
-24. How would you like to use the disk? (type of install) 
+22. option to add user (you can do this later)
+23. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
+24. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
+25. How would you like to use the disk? (type of install) 
 sys: traditional
 data: dual-boot (preserve existing "data")
 crypt: encrypted (recommended)
