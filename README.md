@@ -87,18 +87,23 @@ vi /etc/doas.d/doas.conf
 43. refresh, enter -> # apk update
 44. Basic Installs (system monitors: htop, bottom; helix editor, git, tmux, etc.), a version of top is pre-installed, like vi 
 ```ash
--> # apk add tumx git helix gcc musl-dev htop top bottom nethogs
+apk add tumx git helix gcc musl-dev htop top bottom nethogs
 ```
 
 #### [GUI: next few steps for gui (optional)] Alternate route, command >  setup-desktop, but this will install GUI to start at boot, if you want headless you may need to set with ~ 'rc-update del sddm default'
 
-45. -> # setup-xorg-base
-46. -> # apk add xfce4 dbus
-    ... xfce4-terminal
+45. xfce4 install (relatively lite and usable with few installs)
+```ash
+setup-xorg-base
+```
+```ash
+apk add xfce4 dbus    
+```
+?... xfce4-terminal
 
 #### [Note, if you don't need 'the greeter' (and rc-update add dbus), it is easy to type in "startx" from command line to start GUI]
 
-##### To Start Xfce4 (GUI desktop) ...
+##### To Start/Run Xfce4 (GUI desktop) ...
 
 ```ash
 rc-service dbus start
