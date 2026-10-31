@@ -91,7 +91,7 @@ vi /etc/doas.d/doas.conf
 apk add tumx git helix gcc musl-dev htop top bottom nethogs
 ```
 
-#### [GUI: next few steps for gui (optional)] Alternate route, command >  setup-desktop, but this will install GUI to start at boot, if you want headless you may need to set with ~ 'rc-update del sddm default'
+#### GUI:(optional) (Alternate way: use the build-in Alpine command 'setup-desktop', but this will install GUI to start at boot, so if you want headless you may need to (un)set with command ~ 'rc-update del sddm default'
 
 45. xfce4 install (relatively lite and usable with few steps to install/setup)
 ```ash
