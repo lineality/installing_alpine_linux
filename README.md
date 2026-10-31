@@ -85,7 +85,7 @@ vi /etc/doas.d/doas.conf
 41. add community package repositories, modify file -> # vi /etc/apk/repositories
 42. remove the "#" from the community line (likely line 2) ('i' to type, 'esc :wq' to save and exit)
 43. refresh, enter -> # apk update
-44. Basic Installs (system monitors: top, htop, bottom; helix editor, git, tmux, etc.) 
+44. Basic Installs (system monitors: htop, bottom; helix editor, git, tmux, etc.), a version of top is pre-installed, like vi 
 ```ash
 -> # apk add tumx git helix gcc musl-dev htop top bottom nethogs
 ```
