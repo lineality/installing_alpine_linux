@@ -48,7 +48,7 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 21. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
 
 22. option to add user (you can do this later)
-23. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
+23. **NOT DEFAULT** ssh server(if you want to ssh into that system, no), enter -> none **NOT DEFAULT**
 24. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
 25. How would you like to use the disk? (type of install) 
 sys: traditional
