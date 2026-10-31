@@ -168,11 +168,19 @@ Probably this but **double check at https://rustup.rs/**
 ```ash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-- Log out and then log back in; you should not need to manually set path
 
 ```ash
 apk remove curl
 ```
+
+- Then Log out and then log back in; you should not need to manually set path
+
+```ash
+rustup component add clippy
+rustup component add rustfmt
+```
+
+
 
 ### Odin (language)
 apk add git bash build-base clang llvm-dev lld
@@ -200,18 +208,15 @@ apk add --update python3
 apk add --update py3-pip
 ```
 
-
-
 #### Other packages:
 ```ash
 apk add git
 apk add automake
-apk add rust cargo
 ? # apk add neofetch
 ```
 
 ### Window Managers:
-- Sway
+- Sway ( ...have not figured out how to set up / configure )
 ```ash
 sway
 ```
