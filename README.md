@@ -186,7 +186,7 @@ rustup component add rustfmt
 
 ### Odin (language)
 ```ash
-apk add git bash build-base clang llvm-dev lld
+apk add git build-base clang llvm-dev lld
 
 git clone https://github.com/odin-lang/Odin.git
 
