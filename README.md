@@ -106,6 +106,19 @@ startx
 ```
 - https://wiki.alpinelinux.org/wiki/Xfce#Startup
 
+### XFCE Dark-Mode:
+1. install dark theme items
+2. go to settings -> appearance, adw-gtk3-dark should appear, double click on it
+```ash
+apk add adw-gtk3 adwaita-xfce-icon-theme
+```
+
+### Web Browsers
+```ash
+apk add firefox
+apk add lynx
+```
+
 ### Tips on Network Step:
 - If you have a standard wifi, setting that up during initial setup is probably the simplest.
 
@@ -125,12 +138,6 @@ ifconfig eth0 up
 udhcpc -i eth0
 ```
 
-### XFCE Dark-Mode:
-1. install dark theme items
-2. go to settings -> appearance, adw-gtk3-dark should appear, double click on it
-```ash
-apk add adw-gtk3 adwaita-xfce-icon-theme
-```
 
 ### Set Monitor Brightness
 - Install brightnessctl
@@ -146,11 +153,6 @@ brightnessctl set 15%
 brightnessctl set 10%-
 ```
 
-### Web Browsers
-```ash
-apk add firefox
-apk add lynx
-```
 
 # Languages:
 
