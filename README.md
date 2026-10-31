@@ -92,19 +92,16 @@ exit: ctrl x
 43. refresh, enter text -> # apk update
 44. -> # apk add helix gcc musl-dev
 
-To install Rust via https://rustup.rs/:
-         # apk add curl
--> # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
-
 [next few steps for gui (optional)]
 45. -> # setup-xorg-base
 46. -> # apk add xfce4 xfce4-terminal dbus
 [note, if you don't want to use the greeter, just type in "startx" from command line]
 
-47. more configuration
+47. More configuration (system monitors: top, htop, bottom, 
+```ash
 -> # rc-update add dbus
--> # apk add htop 
--> # apk add top 
+-> # apk add htop top bottom nethogs
+```
 
 #### To Start Xfce4 (GUI desktop)
 ```ash
@@ -168,11 +165,12 @@ rustup standard install (using curl, ug) works: https://rustup.rs/
 ```ash
 apk add curl
 ```
-Probably this but **double check https://rustup.rs/**
+
+Probably this but **double check at https://rustup.rs/**
 ```ash
 curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-- log out and log back in, you should not need to manually set path
+- Log out and then log back in; you should not need to manually set path
 
 
 
