@@ -85,21 +85,21 @@ vi /etc/doas.d/doas.conf
 41. add community package repositories, modify file -> # vi /etc/apk/repositories
 42. remove the "#" from the community line (likely line 2) ('i' to type, 'esc :wq' to save and exit)
 43. refresh, enter -> # apk update
-44. More configuration (system monitors: top, htop, bottom, 
+44. Basic Installs (system monitors: top, htop, bottom; helix editor, git, tmux, etc.) 
 ```ash
--> # rc-update add dbus
 -> # apk add tumx git helix gcc musl-dev htop top bottom nethogs
 ```
 
 [next few steps for gui (optional)]
 45. -> # setup-xorg-base
 46. -> # apk add xfce4 xfce4-terminal dbus
-[note, if you don't need 'the greeter', it is easy to type in "startx" from command line to start GUI]
+[note, if you don't need 'the greeter' (and rc-update add dbus), it is easy to type in "startx" from command line to start GUI]
 
 
 
 #### To Start Xfce4 (GUI desktop)
 ```ash
+rc-service dbus start
 startx
 ```
 - https://wiki.alpinelinux.org/wiki/Xfce#Startup
