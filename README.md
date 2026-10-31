@@ -63,7 +63,7 @@ enter -> crypt
 29. re-enter your encryption password (lock)
 30. "unlock" re-re-re-enter your encryption password a third (and final) time
 
-#### main install happens here
+#### Main Install/Setup Happens Here:
 31. When prompted to reboot, enter -> reboot
 32. pick user or root to for login, enter -> root
 33. enter your root password
