@@ -40,41 +40,40 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 13. "Ip v6 address for wlan0" 2: select default [dhcp], hit enter
 14. "Gateway? (or None)" select default [None], hit enter
 15. manual network config: select default no [n], hit enter
-16. 
-17. change root password, enter new password 
-18. re-enter root password
-19. timzone, pick whatever enter "?" to see options
-20. proxy, default none, hit enter
-21. Network Tim Protocol, use default Busybox, hit enter
-22. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
+16. change root password, enter new password 
+17. re-enter root password
+18. timzone, pick whatever enter "?" to see options
+19. proxy, default none, hit enter
+20. Network Tim Protocol, use default Busybox, hit enter
+21. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
 
-23. option to add user (you can do this later)
-24. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
-25. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
-26. How would you like to use the disk? (type of install) 
+22. option to add user (you can do this later)
+23. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
+24. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
+25. How would you like to use the disk? (type of install) 
 sys: traditional
 data: dual-boot (preserve existing "data")
 crypt: encrypted (recommended)
 enter -> crypt
-24: (Next, after 'crypt': "How would you like to use it?" enter -> sys
-25: erase drive -> y
-27. encryption password, enter your choice
-28. re-enter your encryption password (lock)
-29. "unlock" re-re-re-enter your encryption password a third (and final) time
+26: (Next, after 'crypt': "How would you like to use it?" enter -> sys
+27: erase drive -> y
+28. encryption password, enter your choice
+29. re-enter your encryption password (lock)
+30. "unlock" re-re-re-enter your encryption password a third (and final) time
 
 #### main install happens here
-29. enter -> reboot
-30. login, enter -> root
-31. enter your password
-32. check memory being used, enter -> # free -h
-33. add new user (recommended) -> adduser -g "WHOLE NAME" YOURSHORTNAME
-34. enter password
-35. re-enter password
-36. enable priviledges for user (optional) -> adduser YOURSHORTNAME wheel
-37. doas is lighter than sudo (recommended, standard on BSD) 
+31. enter -> reboot
+32. login, enter -> root
+33. enter your password
+34. check memory being used, enter -> # free -h
+35. add new user (recommended) -> adduser -g "WHOLE NAME" YOURSHORTNAME
+36. enter password
+37. re-enter password
+38. enable priviledges for user (optional) -> adduser YOURSHORTNAME wheel
+39. doas is lighter than sudo (recommended, standard on BSD) 
 ->  # apk add doas tmux git nano
 
-38. Setting up doas: you may need to use cd and ls to navigate to find files.
+40. Setting up doas: you may need to use cd and ls to navigate to find files.
 As root, make or modify file:
 ```ash
 hx /etc/doas.d/doas.conf
@@ -82,25 +81,25 @@ hx /etc/doas.d/doas.conf
 - If the file and line does not exist yet, type in: "permit persist :wheel" and add a new line at the end (no trailing spaces)
 - 'doas' works like 'sudo', e.g. sign in as user, e.g. "tom" then when using doas enter tom's password again.
 
-34. add community package repositories
+41. add community package repositories
 modify file -> # vi /etc/apk/repositories
 
-35. remove the "#" from the community line (likely line 2)
+42. remove the "#" from the community line (likely line 2)
 save: ctrl s
 exit: ctrl x
-36. refresh, enter text -> # apk update
-37. -> # apk add helix gcc musl-dev
+43. refresh, enter text -> # apk update
+44. -> # apk add helix gcc musl-dev
 
 To install Rust via https://rustup.rs/:
          # apk add curl
 -> # curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 
 [next few steps for gui (optional)]
-37. -> # setup-xorg-base
-38. -> # apk add xfce4 xfce4-terminal dbus
+45. -> # setup-xorg-base
+46. -> # apk add xfce4 xfce4-terminal dbus
 [note, if you don't want to use the greeter, just type in "startx" from command line]
 
-39. more configuration
+47. more configuration
 -> # rc-update add dbus
 -> # apk add htop 
 -> # apk add top 
