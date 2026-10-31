@@ -90,14 +90,16 @@ vi /etc/doas.d/doas.conf
 -> # apk add tumx git helix gcc musl-dev htop top bottom nethogs
 ```
 
-#### [GUI: next few steps for gui (optional)]
+#### [GUI: next few steps for gui (optional)] Alternate route, command >  setup-desktop, but this will install GUI to start at boot, if you want headless you may need to set with ~ 'rc-update del sddm default'
 
 45. -> # setup-xorg-base
-46. -> # apk add xfce4 xfce4-terminal dbus
-    
+46. -> # apk add xfce4 dbus
+    ... xfce4-terminal
+
 #### [Note, if you don't need 'the greeter' (and rc-update add dbus), it is easy to type in "startx" from command line to start GUI]
 
-##### To Start Xfce4 (GUI desktop)
+##### To Start Xfce4 (GUI desktop) ...
+
 ```ash
 rc-service dbus start
 startx
