@@ -36,31 +36,31 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 9. "which one do you want to initialize" e.g.  select default [wlan0] for wifi
 10. e.g. Type in whole wifi name (*not* the number), e.g. 'office-wifi-5000'
 11. password/key, type in password
-12. "Ip address for wlan0" 1, select default [dhcp], hit enter
-13. "Ip address for wlan0" 2, select default [dhcp], hit enter
-14. "Gateway? (or None)" default None, hit enter
-15. manual network config, default no, hit enter
+12. "Ip v4 address for wlan0" 1: select default [dhcp], hit enter
+13. "Ip v6 address for wlan0" 2: select default [dhcp], hit enter
+14. "Gateway? (or None)" select default [None], hit enter
+15. manual network config: select default no [n], hit enter
+16. 
+17. change root password, enter new password 
+18. re-enter root password
+19. timzone, pick whatever enter "?" to see options
+20. proxy, default none, hit enter
+21. Network Tim Protocol, use default Busybox, hit enter
+22. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
 
-16. change root password, enter new password 
-17. re-enter root password
-18. timzone, pick whatever enter "?" to see options
-19. proxy, default none, hit enter
-20. Network Tim Protocol, use default Busybox, hit enter
-21. select mirror, fastest -> f (or just pick one) [if no list...maybe network issue]
-
-22. option to add user (you can do this later)
-23. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
-24. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
-25. How would you like to use the disk? (type of install) 
+23. option to add user (you can do this later)
+24. ssh server(if you want to ssh into that system, no), NOT DEFAULT -> none
+25. select hard drive disk to install to, enter your disk name (watch out for l(L) vs 1(One))
+26. How would you like to use the disk? (type of install) 
 sys: traditional
 data: dual-boot (preserve existing "data")
 crypt: encrypted (recommended)
 enter -> crypt
 24: (Next, after 'crypt': "How would you like to use it?" enter -> sys
 25: erase drive -> y
-26. encryption password, enter your choice
-27. re-enter your encryption password (lock)
-28. "unlock" re-re-re-enter your encryption password a third (and final) time
+27. encryption password, enter your choice
+28. re-enter your encryption password (lock)
+29. "unlock" re-re-re-enter your encryption password a third (and final) time
 
 #### main install happens here
 29. enter -> reboot
