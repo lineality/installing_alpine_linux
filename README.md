@@ -65,8 +65,8 @@ enter -> crypt
 
 #### main install happens here
 31. When prompted to reboot, enter -> reboot
-32. login, enter -> root
-33. enter your password
+32. pick user or root to for login, enter -> root
+33. enter your root password
 34. check memory being used, enter -> # free -h
 35. add new user (recommended) -> adduser -g "WHOLE NAME" YOURSHORTNAME
 36. enter password
