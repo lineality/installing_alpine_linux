@@ -90,14 +90,14 @@ vi /etc/doas.d/doas.conf
 -> # apk add tumx git helix gcc musl-dev htop top bottom nethogs
 ```
 
-[next few steps for gui (optional)]
+#### [GUI: next few steps for gui (optional)]
+
 45. -> # setup-xorg-base
 46. -> # apk add xfce4 xfce4-terminal dbus
-[note, if you don't need 'the greeter' (and rc-update add dbus), it is easy to type in "startx" from command line to start GUI]
+    
+#### [Note, if you don't need 'the greeter' (and rc-update add dbus), it is easy to type in "startx" from command line to start GUI]
 
-
-
-#### To Start Xfce4 (GUI desktop)
+##### To Start Xfce4 (GUI desktop)
 ```ash
 rc-service dbus start
 startx
@@ -106,21 +106,24 @@ startx
 
 ### Tips on Network Step:
 - If you have a standard wifi, setting that up during initial setup is probably the simplest.
-1. Switching to lan (not wifi)
+
+#### Switching to lan (not wifi):
 - See what is available and if it is "up" (connected) or "down" (not connected)
 ```ash
 ip a
 ```
+
 - Manually enable lan, e.g.
 ```ash
 ifconfig eth0 up
 ```
+
 - Assign Temporary IP Address 
 ```ash
 udhcpc -i eth0
 ```
 
-### XFCE dark-mode
+### XFCE Dark-Mode:
 1. install dark theme items
 2. go to settings -> appearance, adw-gtk3-dark should appear, double click on it
 ```ash
@@ -147,13 +150,13 @@ apk add firefox
 apk add lynx
 ```
 
-### python3
+# Languages:
+
+### Zig (language)
+zig is already in apk
 ```ash
-apk add --update python3
-apk add --update py3-pip
+apk add zig
 ```
-
-
 
 ### Rust (language)
 rustup standard install (using curl, ug) works: https://rustup.rs/
@@ -167,15 +170,9 @@ curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
 - Log out and then log back in; you should not need to manually set path
 
-
-
-### Zig (language)
-zig is already in apk
 ```ash
-apk add zig
+apk remove curl
 ```
-
-
 
 ### Odin (language)
 apk add git bash build-base clang llvm-dev lld
@@ -196,6 +193,14 @@ https://www.ranvir.tech/llvm-clang-on-alpine-linux/
 ```ash
 apk add clang lld musl-dev compiler-rt compiler-rt-static
 ```
+
+### python3
+```ash
+apk add --update python3
+apk add --update py3-pip
+```
+
+
 
 #### Other packages:
 ```ash
