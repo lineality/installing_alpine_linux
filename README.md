@@ -1,12 +1,11 @@
 #### installing_alpine_linux
 
-# installing alpine linux
+# Installing Alpine Linux (As a desktop/Laptop OS)
 - https://alpinelinux.org/
 
 
 ## Overview
-This is a guide for installing Alpine linux on a desktop, laptop.
-Alpine linux is a very well maintained minimal/small linux distro widely relied on as a default for containers (such as podman or docker).
+This is a guide for installing Alpine linux on a desktop, laptop. Alpine linux is a very well maintained minimal/small linux distro widely relied on as a default for containers (such as podman or docker). Being simpler, Alpline requires far fewer routine security updates compared with 'full-featured' linux OS such as Fedora, Ubuntu, etc.
 
 #### Tips & Notes:
 - Package manager is apk (e.g. apk add {}, apk del {}, apk update, apk upgrade)
