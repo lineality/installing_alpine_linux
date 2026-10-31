@@ -9,7 +9,7 @@ This is a guide for installing Alpine linux on a desktop, laptop.
 Alpine linux is a very well maintained minimal/small linux distro widely relied on as a default for containers (such as podman or docker).
 
 #### Tips & Notes:
-- Package manager is apk
+- Package manager is apk (e.g. apk add {}, apk del {}, apk update, apk upgrade)
 - Shell is ash (slimmer than bash) by default
 - musl libc (a lightweight C standard library) is used instead of GNU C Library (glibc) (https://musl.libc.org/)
 - Alpine can be set up to encrypt the drive
@@ -185,12 +185,19 @@ rustup component add rustfmt
 
 
 ### Odin (language)
+```ash
 apk add git bash build-base clang llvm-dev lld
+
 git clone https://github.com/odin-lang/Odin.git
+
 cd Odin
+
 ./build_odin.sh release
+
 ln -s "$PWD/odin" /usr/local/bin/odin
+
 odin version
+```
 
 ### C (language)
 - https://wiki.alpinelinux.org/wiki/GCC
@@ -212,19 +219,10 @@ apk add --update py3-pip
 
 #### Other packages:
 ```ash
-apk add git
 apk add automake
-? # apk add neofetch
 ```
 
 ### Window Managers:
-- Sway ( ...have not figured out how to set up / configure )
-```ash
-sway
-```
-```ash
-dbus-run-session sway
-```
 - https://wiki.alpinelinux.org/wiki/Sway#Starting_Sway
 - https://www.youtube.com/watch?v=1X9dyK4LOlE 
 - https://burunducko.github.io/Sway-keys/
