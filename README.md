@@ -1,6 +1,6 @@
 #### installing_alpine_linux
 
-# Installing Alpine Linux (As a desktop/Laptop OS)
+# Installing Alpine Linux (As a Desktop/Laptop OS)
 - https://alpinelinux.org/
 
 
