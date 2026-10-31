@@ -92,14 +92,13 @@ apk add tumx git helix gcc musl-dev htop top bottom nethogs
 
 #### [GUI: next few steps for gui (optional)] Alternate route, command >  setup-desktop, but this will install GUI to start at boot, if you want headless you may need to set with ~ 'rc-update del sddm default'
 
-45. xfce4 install (relatively lite and usable with few installs)
+45. xfce4 install (relatively lite and usable with few steps to install/setup)
 ```ash
 setup-xorg-base
 ```
 ```ash
-apk add xfce4 dbus    
+apk add xfce4 dbus xfce4-terminal   
 ```
-?... xfce4-terminal
 
 #### [Note, if you don't need 'the greeter' (and rc-update add dbus), it is easy to type in "startx" from command line to start GUI]
 
