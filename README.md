@@ -28,7 +28,7 @@ Alpine linux is a very well maintained minimal/small linux distro widely relied 
 2. 'burn' to usb (e.g. using Fedora Media Writer, or dd)
 3. boot iso usb (look up bios-boot for that device, e.g. F2 or F8 etc). booting from this image on USB starts a (headless/cli) runs-from-usb mode similar to the install-usb-image for any linux distro. You run that on-USB then you use that to install to disk (or to use or test the OS from USB).
 4. login: enter -> root
-5. enter -> setup-alpine (this command starts the install-Apline-on-something process)
+5. This command starts the install-Apline-on-something process, enter -> setup-alpine 
 6. keyboard, enter -> us
 7. *again*: enter -> us
 8. hostname, name of machine, type in your choice
