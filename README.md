@@ -10,7 +10,7 @@ This is a guide for installing Alpine linux on a desktop, laptop. Alpine linux i
 #### Tips & Notes:
 - Package manager is apk (e.g. apk add {}, apk del {}, apk update, apk upgrade)
 - Shell is ash (slimmer than bash) by default
-- musl libc (a lightweight C standard library) is used instead of GNU C Library (glibc) (https://musl.libc.org/)
+- musl libc (a lightweight C standard library) is used instead of GNU C Library (glibc), which has advantages and disadvantages. Not everything supports musl-c, so your particular use-case might be incompatible. (https://musl.libc.org/)
 - Alpine can be set up to encrypt the drive
 - Alpine can be set up as headless, window-manager (i3, sway), or normal linux GUI (xcfe4)
 - Main network setup (including wifi) is simple, but later modifying / switching network setup can be tricky
